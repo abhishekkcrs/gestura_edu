@@ -82,7 +82,7 @@ gesture-edu/
 
 On Linux
 ```bash
-cd your/extracted/location/gesture_edu
+cd your/extracted/location/gestura_edu
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -90,7 +90,7 @@ pip install -r requirements.txt
 
 On Windows
 ```bash
-cd your\extracted\location\gesture-edu
+cd your\extracted\location\gestura_edu
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
