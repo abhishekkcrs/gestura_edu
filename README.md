@@ -1,4 +1,4 @@
-# ✋ Gestura-EDU: Bridging the gap
+# ✋ Gestura-Edu: Equal Voices, Different Languages
 
 A real-time gesture recognition system using hand landmarks and Dynamic Time Warping (DTW). Lightweight and efficient — no deep learning models required. Define gestures on-the-fly and link them to commands for intuitive interaction.
 
