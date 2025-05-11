@@ -7,13 +7,21 @@
     <link rel="stylesheet" type="text/css" href="./styles.css" />
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <button class="back-button" onclick="window.location.href='index.html'">
-            <span class="back-arrow">←</span> Back to Lessons
-        </button>
-        <div class="nav-brand">
-            <h1>Gestura</h1>
+    <!-- Custom Header -->
+    <div class="custom-header" style="display: flex; align-items: center; justify-content: space-between; padding: 30px 40px 10px 40px;">
+        <!-- Left Logo -->
+        <img src="assets/gesturalogo.png" alt="Gestura Logo" style="height: 70px;">
+        <!-- Center Title and Subtitle -->
+        <div style="flex: 1; margin-left: 30px;">
+            <h1 style="margin: 0; font-size: 2.5rem; font-weight: bold;">Gestura</h1>
+            <div style="margin-top: 5px; color: #555; font-size: 1.1rem;">
+                Real-time Sign Language Interpreter and Training Utility
+            </div>
+        </div>
+        <!-- Right Logos -->
+        <div style="display: flex; gap: 30px;">
+            <img src="assets/swavlamban.png" alt="Swavlamban Logo" style="height: 70px;">
+            <img src="assets/azadi.jpg" alt="Azadi Ka Amrit Mahotsav Logo" style="height: 70px;">
         </div>
     </div>
 
@@ -27,7 +35,7 @@
     <div id="urlModal" class="modal">
         <div class="modal-content">
             <h2>Enter WebSocket URL</h2>
-            <input type="text" id="serverUrl" placeholder="Enter WebSocket URL" value="ws://192.168.17.170:8000/ws">
+            <input type="text" id="serverUrl" placeholder="Enter WebSocket URL" value="ws://localhost:8000/ws">
             <button class="btn-primary" onclick="updateServerUrl()">Connect</button>
         </div>
     </div>
@@ -77,7 +85,7 @@
         <!-- Right Side - Video Player -->
         <div class="split-right">
             <div class="video-player-container">
-                <video id="tutorialVideo" controls loop autoplay muted src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                <video id="tutorialVideo" controls loop autoplay muted>
                     Your browser does not support the video tag.
                 </video>
                 <div class="video-controls">
@@ -90,10 +98,10 @@
     </div>
 
     <!-- Footer -->
-    <!-- <footer class="footer">
-        <p>&copy; 2025 ISL Project. All Rights Reserved.</p>
-    </footer> -->
-
+    <footer class="footer">
+        <p>Gestura: Equal Voices, Different Languages</p>
+    </footer>
+    
     <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </body>

@@ -19,7 +19,7 @@ const videoMap = {
     'evening': 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4'
 };
 
-const DEFAULT_VIDEO_URL = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
+// const DEFAULT_VIDEO_URL = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
 
 // Update counter display
 function updateCounter(value) {
@@ -205,9 +205,13 @@ document.addEventListener("DOMContentLoaded", () => {
 // Function to convert YouTube URL to embed URL
 function getYouTubeEmbedUrl(url) {
     if (!url) return null;
+    console.log('Converting YouTube URL:', url);
     const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
     const match = url.match(regExp);
-    return match && match[2].length === 11 ? `https://www.youtube.com/embed/${match[2]}` : null;
+    console.log('URL match result:', match);
+    const result = match && match[2].length === 11 ? `https://www.youtube.com/embed/${match[2]}` : null;
+    console.log('Converted embed URL:', result);
+    return result;
 }
 
 // Function to get video URL from lessons data

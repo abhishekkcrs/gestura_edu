@@ -769,7 +769,7 @@ video {
 }
 
 .nav-container .logo {
-    height: 100px;
+    height: 160px;
     width: auto;
 }
 
@@ -797,6 +797,7 @@ video {
     height: 100px;
     width: auto;
     object-fit: contain;
+    border-radius: 25px;
 }
 
 /* Lessons Section */
@@ -1193,7 +1194,7 @@ nav, .lessons-section {
 .about-container,
 .sdg-container {
     padding-left: 3rem;
-    text-align: left;
+    text-align: center;
 }
 
 html {
