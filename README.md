@@ -81,7 +81,7 @@ gesture-edu/
 ### 3.2 Backend Setup
 
 ```bash
-cd your/extracted/location/gesture-edu
+cd your/extracted/location/gesture_edu
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
